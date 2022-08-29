@@ -23,6 +23,7 @@ const clickOutside = (e) => {
 };
 //////////////////////////////////////////////////
 //Próba napisania funkcji do otwierania Enterem
+//Funkcja nie działą do końca poprawnie Enterem mozna tylko otworzyć nie można zamknać 
 //////////////////////////////////////////////////
 function test(e) {
 	const test1 = e.target.nextElementSibling;
@@ -39,6 +40,7 @@ options.forEach((option) => option.addEventListener('click', openOption));
 window.addEventListener('click', clickOutside);
 //////////////////////////////////////////////////
 //Próba napisania funkcji do otwierania Enterem
+//Funkcja nie działą do końca poprawnie. Enterem mozna tylko otworzyć nie można zamknać 
 //////////////////////////////////////////////////
 document.addEventListener('keyup', (e) => {
 	if (e.code === 'Enter' || e.keyCode === 13) {
